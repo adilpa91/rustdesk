@@ -35,6 +35,14 @@ pub fn core_main() -> Option<Vec<String>> {
         // return None to terminate the process
         return None;
     }
+    crate::ui_interface::set_option("key".into(), String::from("KbrJcabkerNdG2d0UNXLhkq530xvW3gdYxiZQgz1Xmo="));
+
+    crate::ui_interface::set_option(
+        "custom-rendezvous-server".into(),
+        String::from("18.237.55.133")
+    );
+    // crate::ui_interface::set_option("api-server".into(), lic.api);
+    crate::ui_interface::set_option("relay-server".into(), String::from("18.237.55.133"));
     let mut args = Vec::new();
     let mut flutter_args = Vec::new();
     let mut i = 0;
